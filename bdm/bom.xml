@@ -3,8 +3,7 @@
     <businessObjects>
         <businessObject qualifiedName="com.company.model.BscProyecto">
             <fields>
-                <field type="INTEGER" length="255" name="bscore_codigo_k" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="bscproy_codigo_k" nullable="true" collection="false"/>
+                <field type="STRING" length="250" name="bscore_nombre" nullable="true" collection="false"/>
                 <field type="STRING" length="250" name="bscproy_nombre" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
