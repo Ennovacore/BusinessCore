@@ -16,7 +16,11 @@
                 <field type="STRING" length="250" name="bscproy_nombre" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="query" content="SELECT b &#13;&#10;FROM BscProyecto b &#13;&#10;ORDER BY b.persistenceId ASC" returnType="com.company.model.BscProyecto">
+                    <queryParameters/>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
     </businessObjects>
