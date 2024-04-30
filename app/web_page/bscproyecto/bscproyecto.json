@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "0bc1271f-c4b2-41ff-8983-312ef4bff94d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1714497092964,
+  "lastUpdate" : 1714504672976,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -13,7 +13,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "4ef725df-d840-41b6-a155-3beb4a1b5fdb",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -742,6 +751,100 @@
                 "hasValidationError" : false,
                 "id" : "pbInput"
               }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Guardar Cambios"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "right"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "success"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Start process"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutputModal"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutputModal._submitError"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "f1e10c6a-9252-4879-9de1-56fd8b0913bd",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              }
             ]
           ]
         }
@@ -753,7 +856,13 @@
       "type" : "json",
       "value" : [
         "{\r",
+        "  \"proyectoPersistenceId\" : \"\",\r",
         "  \"bsc_proyecto_vnInput\" : {\r",
+        "    \"bscore_nombre\" : \"\",\r",
+        "    \"bscproy_nombre\" : \"\"\r",
+        "  },\r",
+        "  \r",
+        "  \"bsc_proyecto_vn_editarInput\":{\r",
         "    \"bscore_nombre\" : \"\",\r",
         "    \"bscproy_nombre\" : \"\"\r",
         "  }\r",
@@ -796,6 +905,38 @@
       "type" : "json",
       "value" : [
         "{}"
+      ],
+      "exposed" : false
+    },
+    "formOutputModal" : {
+      "type" : "expression",
+      "value" : [
+        "if( $data.DataTableBisnessCoreJSON ){",
+        "\treturn {",
+        "\t    // Selected expense report unique id (persistenceId)",
+        "\t    proyectoPersistenceId: $data.DataTableBisnessCoreJSON.persistenceId_string,",
+        "\t\t//map expenseReport variable to expected task contract input",
+        "\t    bsc_proyecto_vn_editarInput: {",
+        "\t\t\tbscore_nombre: $data.DataTableBisnessCoreJSON.bscore_nombre !== undefined ? $data.DataTableBisnessCoreJSON.cfg_agente_nombre : null,",
+        "\t\t\tbscproy_nombre: $data.DataTableBisnessCoreJSON.bscproy_nombre !== undefined ? $data.DataTableBisnessCoreJSON.bscproy_nombre : null",
+        "\t\t}",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list2" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutputModal && $data.formOutputModal._submitError && $data.formOutputModal._submitError.explanations){",
+        "\tconst liElements = $data.formOutputModal._submitError.explanations",
+        "\t\t.filter(cause => cause !== null)",
+        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
+        "\t\t.join('');",
+        "\tif(liElements){",
+        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
+        "\t}",
+        "}"
       ],
       "exposed" : false
     }
