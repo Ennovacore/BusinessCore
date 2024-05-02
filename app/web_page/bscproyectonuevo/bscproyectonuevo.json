@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "72fdeacd-947b-484d-85dc-fccd1c9888dd",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1714675153204,
+  "lastUpdate" : 1714675976599,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -196,48 +196,17 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "disabled" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Bscore_nombre"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.bsc_proyecto_vnInput.bscore_nombre"
                         },
                         "required" : {
                           "type" : "constant",
@@ -247,33 +216,45 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "minLength" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
-                        "maxLength" : {
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Bisness Core"
+                        },
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : "top"
                         },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
+                        "labelWidth" : {
                           "type" : "constant",
                           "value" : 1
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "bscore"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : "bscore_nombre"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "bscore_nombre"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.bsc_proyecto_vnInput.bscore_nombre"
                         }
                       },
-                      "reference" : "dad1e75a-c27d-4f1b-b5c0-5223104da2af",
+                      "reference" : "d019d7f3-f22c-40ac-829c-ab5ce688ea9d",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ],
                   [
@@ -312,7 +293,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Bscproy_nombre"
+                          "value" : "Sucursal"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -562,6 +543,13 @@
         "return {",
         "\tbsc_proyecto_vnInput: $data.formInput.bsc_proyecto_vnInput",
         "}"
+      ],
+      "exposed" : false
+    },
+    "bscore" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [com.company.model.BscCore]\",\"businessObjectName\":\"BscCore\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.BscCore\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
     }

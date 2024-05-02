@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "9ec49387-7215-4439-bdba-ad67ebf1751a",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1714675257234,
+  "lastUpdate" : 1714676284713,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -230,23 +230,15 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
                   "required" : {
                     "type" : "constant",
                     "value" : false
                   },
                   "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "minLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "maxLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "readOnly" : {
                     "type" : "constant",
                     "value" : false
                   },
@@ -269,32 +261,26 @@
                   "placeholder" : {
                     "type" : "interpolation"
                   },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "bisnesscore"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant",
+                    "value" : "bscore_nombre"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant",
+                    "value" : "bscore_nombre"
+                  },
                   "value" : {
                     "type" : "variable",
                     "value" : "DataTableBisnessCoreJSON.bscore_nombre"
-                  },
-                  "debounce" : {
-                    "type" : "constant",
-                    "value" : 0
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
-                  },
-                  "min" : {
-                    "type" : "constant"
-                  },
-                  "max" : {
-                    "type" : "constant"
-                  },
-                  "step" : {
-                    "type" : "constant",
-                    "value" : 1
                   }
                 },
-                "reference" : "7c0efbcc-a121-469a-b7ab-9f41320338bd",
+                "reference" : "0ea386f3-7abc-4924-9180-37ea4cc83175",
                 "hasValidationError" : false,
-                "id" : "pbInput"
+                "id" : "pbSelect"
               }
             ],
             [
@@ -525,6 +511,13 @@
       "type" : "json",
       "value" : [
         "{}"
+      ],
+      "exposed" : false
+    },
+    "bisnesscore" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [com.company.model.BscCore]\",\"businessObjectName\":\"BscCore\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.BscCore\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
     }
