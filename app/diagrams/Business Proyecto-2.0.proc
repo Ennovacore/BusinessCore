@@ -25,17 +25,14 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_hlO3IAcMEe-QHr9Mppu-Rg" name="bsc_proyecto_vn" dataType="_hlO3SwcMEe-QHr9Mppu-Rg" className="com.company.model.BscProyecto">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_hlO3IQcMEe-QHr9Mppu-Rg" name="initBsc_proyecto_vn()" content="def bscProyectoVar = new com.company.model.BscProyecto()&#xD;&#xA;bscProyectoVar.bscore_nombre = bsc_proyecto_vnInput?.bscore_nombre&#xD;&#xA;bscProyectoVar.bscproy_nombre = bsc_proyecto_vnInput?.bscproy_nombre&#xD;&#xA;return bscProyectoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.BscProyecto">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_hlO3IgcMEe-QHr9Mppu-Rg" name="bsc_proyecto_vnInput" type="COMPLEX"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_hlO3IQcMEe-QHr9Mppu-Rg" name="initBsc_proyecto_vn()" content="import com.company.model.BscProyecto&#xD;&#xA;&#xD;&#xA;/*&#xD;&#xA;d e f bscProyectoVarxxx = new com.company.model.BscProyecto()&#xD;&#xA;bscProyectoVar.bscore_nombre = bsc_proyecto_vnInput?.bscore_nombre&#xD;&#xA;bscProyectoVar.bscproy_nombre = bsc_proyecto_vnInput?.bscproy_nombre&#xD;&#xA;return bscProyectoVar*/&#xD;&#xA;&#xD;&#xA;def bscProyectoVar = {bscProyectoDAO.findByPersistenceId(Long.parseLong(     )) ?: new com.company.model.BscProyecto()}&#xD;&#xA;&#xD;&#xA;bscProyectoVar.bscore_nombre = bsc_proyecto_vnInput?.bscore_nombre&#xD;&#xA;bscProyectoVar.bscproy_nombre = bsc_proyecto_vnInput?.bscproy_nombre&#xD;&#xA;&#xD;&#xA;return bscProyectoVar&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.BscProyecto">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_d7-2ogdHEe-QHr9Mppu-Rg" name="bsc_proyecto_vnInput" type="COMPLEX"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_d7-2owdHEe-QHr9Mppu-Rg" name="bscProyectoDAO" content="bscProyectoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.BscProyectoDAO" returnTypeFixed="true"/>
         </defaultValue>
       </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_zzv08AcXEe-QHr9Mppu-Rg" name="bsc_proyecto_vn_editar" dataType="_hlO3SwcMEe-QHr9Mppu-Rg" className="com.company.model.BscProyecto">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_F1F6ggcYEe-QHr9Mppu-Rg" name="initBsc_proyecto_vn_editar()" content="import com.company.model.BscProyecto&#xD;&#xA;&#xD;&#xA;def bscProyectoVar = bscProyectoDAO.findByPersistenceId(Long.parseLong(proyectoPersistenceId))&#xD;&#xA;&#xD;&#xA;bscProyectoVar.bscore_nombre = bsc_proyecto_vn_editarInput?.bscore_nombre&#xD;&#xA;bscProyectoVar.bscproy_nombre = bsc_proyecto_vn_editarInput?.bscproy_nombre&#xD;&#xA;&#xD;&#xA;return bscProyectoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.BscProyecto">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_fRYx4AccEe-QHr9Mppu-Rg" name="proyectoPersistenceId">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_fRYx4QccEe-QHr9Mppu-Rg"/>
-          </referencedElements>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_fRanEAccEe-QHr9Mppu-Rg" name="bscProyectoDAO" content="bscProyectoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.BscProyectoDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_fRanEQccEe-QHr9Mppu-Rg" name="bsc_proyecto_vn_editarInput" type="COMPLEX"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_fL93gAiqEe-57M0XpRR4MQ" name="bsc_proyecto_vn_editar" dataType="_hlO3SwcMEe-QHr9Mppu-Rg" className="com.company.model.BscProyecto">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_hnPAEAiqEe-57M0XpRR4MQ" name="initBsc_proyecto_vn_editar()" content="def bscProyectoVar = new com.company.model.BscProyecto()&#xD;&#xA;bscProyectoVar.bscore_nombre = bsc_proyecto_vn_editarInput?.bscore_nombre&#xD;&#xA;bscProyectoVar.bscproy_nombre = bsc_proyecto_vn_editarInput?.bscproy_nombre&#xD;&#xA;return bscProyectoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.BscProyecto">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_hnPnIAiqEe-57M0XpRR4MQ" name="bsc_proyecto_vn_editarInput" type="COMPLEX"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_hlO3IwcMEe-QHr9Mppu-Rg">
@@ -58,17 +55,17 @@
           <inputs xmi:type="process:ContractInput" xmi:id="_hlO3MAcMEe-QHr9Mppu-Rg" name="bscore_nombre"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_hlO3MQcMEe-QHr9Mppu-Rg" name="bscproy_nombre"/>
         </inputs>
-        <inputs xmi:type="process:ContractInput" xmi:id="_42VlEAcXEe-QHr9Mppu-Rg" name="proyectoPersistenceId">
-          <mapping xmi:type="process:ContractInputMapping" xmi:id="_42VlEQcXEe-QHr9Mppu-Rg"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_hnNK4AiqEe-57M0XpRR4MQ" name="bsc_proyecto_vn_editarInput" type="COMPLEX" dataReference="bsc_proyecto_vn_editar">
+          <inputs xmi:type="process:ContractInput" xmi:id="_hnNx8AiqEe-57M0XpRR4MQ" name="bscore_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_hnNx8QiqEe-57M0XpRR4MQ" name="bscproy_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_kTZEUAiqEe-57M0XpRR4MQ" name="proyectoPersistenceId">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_kTZEUQiqEe-57M0XpRR4MQ"/>
+          </inputs>
         </inputs>
-        <inputs xmi:type="process:ContractInput" xmi:id="_F1FTcAcYEe-QHr9Mppu-Rg" name="bsc_proyecto_vn_editarInput" type="COMPLEX" dataReference="bsc_proyecto_vn_editar">
-          <inputs xmi:type="process:ContractInput" xmi:id="_F1FTcQcYEe-QHr9Mppu-Rg" name="bscore_nombre"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_F1FTcgcYEe-QHr9Mppu-Rg" name="bscproy_nombre"/>
-        </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_F1F6gAcYEe-QHr9Mppu-Rg" expression="bsc_proyecto_vn_editarInput?.bscore_nombre != null" errorMessage="bscore_nombre is mandatory for BscProyecto" name="mandatory_bsc_proyecto_vn_editarInput_bscore_nombre">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_hnOZAAiqEe-57M0XpRR4MQ" expression="bsc_proyecto_vn_editarInput?.bscore_nombre != null" errorMessage="bscore_nombre is mandatory for BscProyecto" name="mandatory_bsc_proyecto_vn_editarInput_bscore_nombre">
           <inputNames>bsc_proyecto_vn_editarInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_F1F6gQcYEe-QHr9Mppu-Rg" expression="bsc_proyecto_vn_editarInput?.bscproy_nombre != null" errorMessage="bscproy_nombre is mandatory for BscProyecto" name="mandatory_bsc_proyecto_vn_editarInput_bscproy_nombre">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_hnOZAQiqEe-57M0XpRR4MQ" expression="bsc_proyecto_vn_editarInput?.bscproy_nombre != null" errorMessage="bscproy_nombre is mandatory for BscProyecto" name="mandatory_bsc_proyecto_vn_editarInput_bscproy_nombre">
           <inputNames>bsc_proyecto_vn_editarInput</inputNames>
         </constraints>
       </contract>
