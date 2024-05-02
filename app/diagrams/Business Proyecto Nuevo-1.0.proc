@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
-  <process:MainProcess xmi:id="_PpgMYAZ_Ee-5_ZcDCc8F-w" name="Business Proyecto" bonitaModelVersion="8">
-    <elements xmi:type="process:Pool" xmi:id="_PpgMYQZ_Ee-5_ZcDCc8F-w" name="Proyecto">
+  <process:MainProcess xmi:id="_PpgMYAZ_Ee-5_ZcDCc8F-w" name="Business Proyecto Nuevo" bonitaModelVersion="8">
+    <elements xmi:type="process:Pool" xmi:id="_PpgMYQZ_Ee-5_ZcDCc8F-w" name="Proyecto Nuevo">
       <elements xmi:type="process:Lane" xmi:id="_PpgMYgZ_Ee-5_ZcDCc8F-w" name="Empleado (lane) " actor="_PpgMewZ_Ee-5_ZcDCc8F-w">
         <elements xmi:type="process:StartEvent" xmi:id="_PpgMYwZ_Ee-5_ZcDCc8F-w" name="Inicio1" outgoing="_PpgMeAZ_Ee-5_ZcDCc8F-w">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_PpgMZAZ_Ee-5_ZcDCc8F-w" name="" content="" returnTypeFixed="true"/>
@@ -30,7 +30,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_PpgMdAZ_Ee-5_ZcDCc8F-w">
-        <targetForm xmi:type="expression:Expression" xmi:id="_iz8A8AZ_Ee-5_ZcDCc8F-w" name="bscproyecto" content="0bc1271f-c4b2-41ff-8983-312ef4bff94d" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_iz8A8AZ_Ee-5_ZcDCc8F-w" name="bscproyectonuevo" content="72fdeacd-947b-484d-85dc-fccd1c9888dd" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_PpgMdgZ_Ee-5_ZcDCc8F-w" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_PpgMdwZ_Ee-5_ZcDCc8F-w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

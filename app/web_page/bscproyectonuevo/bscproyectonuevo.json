@@ -1,12 +1,87 @@
 {
-  "id" : "bscproyecto",
-  "name" : "bscproyecto",
+  "id" : "bscproyectonuevo",
+  "name" : "bscproyectonuevo",
   "type" : "form",
-  "uuid" : "0bc1271f-c4b2-41ff-8983-312ef4bff94d",
+  "uuid" : "72fdeacd-947b-484d-85dc-fccd1c9888dd",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1714671560069,
+  "lastUpdate" : 1714675153204,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Regresar"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "process"
+          },
+          "targetUrl" : {
+            "type" : "constant",
+            "value" : "http://"
+          },
+          "pageToken" : {
+            "type" : "constant"
+          },
+          "processName" : {
+            "type" : "constant",
+            "value" : "Proyecto Editar"
+          },
+          "processVersion" : {
+            "type" : "constant",
+            "value" : "1.0"
+          },
+          "taskId" : {
+            "type" : "constant"
+          },
+          "caseId" : {
+            "type" : "constant"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_self"
+          },
+          "appToken" : {
+            "type" : "constant"
+          },
+          "urlParams" : {
+            "type" : "constant"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "right"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          }
+        },
+        "reference" : "0a5e0902-9ce4-4c92-89be-6917bf2d24a6",
+        "hasValidationError" : false,
+        "id" : "pbLink"
+      }
+    ],
     [
       {
         "type" : "formContainer",
@@ -23,7 +98,7 @@
             "value" : false
           }
         },
-        "reference" : "4ef725df-d840-41b6-a155-3beb4a1b5fdb",
+        "reference" : "d7cb03cb-a802-45a8-aff1-d42d6ad0ec18",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -32,7 +107,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "a4f55204-0034-4f31-b2a2-9fd2e5cdba16",
+          "reference" : "e0e37962-5e28-4327-abc4-61f9ddb2a567",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -75,7 +150,7 @@
                     "value" : false
                   }
                 },
-                "reference" : "6a7c7584-ae25-45aa-a799-3f5db92d53b9",
+                "reference" : "8294c8de-cbfa-4039-80be-d4665dbf4a4b",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -107,7 +182,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "40fb5e99-d7db-4f9b-80ff-59924da7f19f",
+                "reference" : "128f5854-e781-4cf6-856c-399d7ec71ef3",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -195,7 +270,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "6d545f4f-0636-4438-895a-037fd8c0f745",
+                      "reference" : "dad1e75a-c27d-4f1b-b5c0-5223104da2af",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -285,7 +360,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "e15cb8e7-aee4-48e0-a43c-becba37546f8",
+                      "reference" : "c51c037f-3ccc-4739-b3cb-8c2fbf3452d3",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -317,7 +392,7 @@
                   },
                   "buttonStyle" : {
                     "type" : "constant",
-                    "value" : "primary"
+                    "value" : "success"
                   },
                   "label" : {
                     "type" : "interpolation",
@@ -390,7 +465,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "b22b92f3-67ca-4bef-9bf8-f763474ea185",
+                "reference" : "94a6b87b-9551-4611-88d4-0a9c5976917c",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -442,408 +517,10 @@
                     "value" : 12
                   }
                 },
-                "reference" : "f6a2a119-bb7f-47f3-988a-d94bf6b2eeed",
+                "reference" : "d760ff73-c39a-48d1-b562-31850b61cfd2",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
-              }
-            ]
-          ]
-        }
-      }
-    ],
-    [
-      {
-        "type" : "component",
-        "dimension" : {
-          "xs" : 12,
-          "sm" : 12,
-          "md" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "caption" : {
-            "type" : "interpolation"
-          },
-          "allowHTML" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "headers" : {
-            "type" : "constant",
-            "value" : [
-              "Bisness Core",
-              "Proyecto"
-            ]
-          },
-          "type" : {
-            "type" : "constant",
-            "value" : "Variable"
-          },
-          "apiUrl" : {
-            "type" : "constant",
-            "value" : "../API/"
-          },
-          "params" : {
-            "type" : "constant"
-          },
-          "content" : {
-            "type" : "expression",
-            "value" : "DataTableBisnessCore"
-          },
-          "columnsKey" : {
-            "type" : "constant",
-            "value" : [
-              "bscore_nombre",
-              "bscproy_nombre"
-            ]
-          },
-          "sortColumns" : {
-            "type" : "constant"
-          },
-          "selectedRow" : {
-            "type" : "variable",
-            "value" : "DataTableBisnessCoreJSON"
-          },
-          "pageSize" : {
-            "type" : "constant",
-            "value" : 10
-          },
-          "filter" : {
-            "type" : "constant"
-          },
-          "striped" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "condensed" : {
-            "type" : "constant",
-            "value" : true
-          },
-          "bordered" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "modalid" : {
-            "type" : "constant",
-            "value" : "ModActualizar"
-          }
-        },
-        "reference" : "b31bf772-5e8b-4442-9438-ceef7e061510",
-        "hasValidationError" : false,
-        "id" : "customDatatableModal"
-      }
-    ],
-    [
-      {
-        "type" : "modalContainer",
-        "dimension" : {
-          "xs" : 12,
-          "sm" : 12,
-          "md" : 12,
-          "lg" : 12
-        },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "modalId" : {
-            "type" : "constant",
-            "value" : "ModActualizar"
-          },
-          "size" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "animation" : {
-            "type" : "constant",
-            "value" : true
-          }
-        },
-        "reference" : "9c3571e8-f944-437c-975a-3013260b3bd3",
-        "hasValidationError" : false,
-        "id" : "pbModalContainer",
-        "container" : {
-          "type" : "container",
-          "dimension" : {
-            "xs" : 12
-          },
-          "propertyValues" : { },
-          "reference" : "55950d98-5e28-462c-8c8c-14b682b4b3e4",
-          "hasValidationError" : false,
-          "id" : "pbContainer",
-          "rows" : [
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "minLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "maxLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "readOnly" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "placeholder" : {
-                    "type" : "interpolation"
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "DataTableBisnessCoreJSON.bscore_nombre"
-                  },
-                  "debounce" : {
-                    "type" : "constant",
-                    "value" : 0
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
-                  },
-                  "min" : {
-                    "type" : "constant"
-                  },
-                  "max" : {
-                    "type" : "constant"
-                  },
-                  "step" : {
-                    "type" : "constant",
-                    "value" : 1
-                  }
-                },
-                "reference" : "81e9b1a8-245f-4382-977a-e6fca13b9109",
-                "hasValidationError" : false,
-                "id" : "pbInput"
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "minLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "maxLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "readOnly" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "placeholder" : {
-                    "type" : "interpolation"
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "DataTableBisnessCoreJSON.bscproy_nombre"
-                  },
-                  "debounce" : {
-                    "type" : "constant",
-                    "value" : 0
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
-                  },
-                  "min" : {
-                    "type" : "constant"
-                  },
-                  "max" : {
-                    "type" : "constant"
-                  },
-                  "step" : {
-                    "type" : "constant",
-                    "value" : 1
-                  }
-                },
-                "reference" : "dfe9c770-5c14-4ceb-8acc-5a5e8c2aa4ef",
-                "hasValidationError" : false,
-                "id" : "pbInput"
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Guardar Cambios"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "right"
-                  },
-                  "buttonStyle" : {
-                    "type" : "constant",
-                    "value" : "success"
-                  },
-                  "action" : {
-                    "type" : "constant",
-                    "value" : "Start process"
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable"
-                  },
-                  "dataToSend" : {
-                    "type" : "expression",
-                    "value" : "formOutputModal"
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable"
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "dataFromError" : {
-                    "type" : "variable",
-                    "value" : "formOutputModal._submitError"
-                  },
-                  "targetUrlOnSuccess" : {
-                    "type" : "interpolation",
-                    "value" : "/bonita"
-                  },
-                  "collectionToModify" : {
-                    "type" : "variable"
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "collectionPosition" : {
-                    "type" : "constant",
-                    "value" : "Last"
-                  },
-                  "valueToAdd" : {
-                    "type" : "constant"
-                  },
-                  "removeItem" : {
-                    "type" : "variable"
-                  }
-                },
-                "reference" : "f1e10c6a-9252-4879-9de1-56fd8b0913bd",
-                "hasValidationError" : false,
-                "id" : "pbButton"
               }
             ]
           ]
@@ -884,53 +561,6 @@
       "value" : [
         "return {",
         "\tbsc_proyecto_vnInput: $data.formInput.bsc_proyecto_vnInput",
-        "}"
-      ],
-      "exposed" : false
-    },
-    "DataTableBisnessCore" : {
-      "type" : "url",
-      "value" : [
-        "../API/bdm/businessData/com.company.model.BscProyecto?q=query&p=0&c=100000"
-      ],
-      "exposed" : false
-    },
-    "DataTableBisnessCoreJSON" : {
-      "type" : "json",
-      "value" : [
-        "{}"
-      ],
-      "exposed" : false
-    },
-    "formOutputModal" : {
-      "type" : "expression",
-      "value" : [
-        "if( $data.DataTableBisnessCoreJSON ){",
-        "\treturn {",
-        "\t    // Selected expense report unique id (persistenceId)",
-        "\t    ",
-        "\t\t//map expenseReport variable to expected task contract input",
-        "\t    bsc_proyecto_vnInput: {",
-        "\t        proyectoPersistenceId: $data.DataTableBisnessCoreJSON.persistenceId_string,",
-        "\t\t\tbscore_nombre: $data.DataTableBisnessCoreJSON.bscore_nombre !== undefined ? $data.DataTableBisnessCoreJSON.cfg_agente_nombre : null,",
-        "\t\t\tbscproy_nombre: $data.DataTableBisnessCoreJSON.bscproy_nombre !== undefined ? $data.DataTableBisnessCoreJSON.bscproy_nombre : null",
-        "\t\t}",
-        "\t}",
-        "}"
-      ],
-      "exposed" : false
-    },
-    "submit_errors_list2" : {
-      "type" : "expression",
-      "value" : [
-        "if($data.formOutputModal && $data.formOutputModal._submitError && $data.formOutputModal._submitError.explanations){",
-        "\tconst liElements = $data.formOutputModal._submitError.explanations",
-        "\t\t.filter(cause => cause !== null)",
-        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
-        "\t\t.join('');",
-        "\tif(liElements){",
-        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
-        "\t}",
         "}"
       ],
       "exposed" : false
