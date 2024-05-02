@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "0bc1271f-c4b2-41ff-8983-312ef4bff94d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1714504672976,
+  "lastUpdate" : 1714518970378,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -856,13 +856,8 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"proyectoPersistenceId\" : \"\",\r",
+        "  \"proyectoPersistenceId\" : \"null\",\r",
         "  \"bsc_proyecto_vnInput\" : {\r",
-        "    \"bscore_nombre\" : \"\",\r",
-        "    \"bscproy_nombre\" : \"\"\r",
-        "  },\r",
-        "  \r",
-        "  \"bsc_proyecto_vn_editarInput\":{\r",
         "    \"bscore_nombre\" : \"\",\r",
         "    \"bscproy_nombre\" : \"\"\r",
         "  }\r",
@@ -916,7 +911,7 @@
         "\t    // Selected expense report unique id (persistenceId)",
         "\t    proyectoPersistenceId: $data.DataTableBisnessCoreJSON.persistenceId_string,",
         "\t\t//map expenseReport variable to expected task contract input",
-        "\t    bsc_proyecto_vn_editarInput: {",
+        "\t    bsc_proyecto_vnInput: {",
         "\t\t\tbscore_nombre: $data.DataTableBisnessCoreJSON.bscore_nombre !== undefined ? $data.DataTableBisnessCoreJSON.cfg_agente_nombre : null,",
         "\t\t\tbscproy_nombre: $data.DataTableBisnessCoreJSON.bscproy_nombre !== undefined ? $data.DataTableBisnessCoreJSON.bscproy_nombre : null",
         "\t\t}",
