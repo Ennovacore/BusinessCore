@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "9ec49387-7215-4439-bdba-ad67ebf1751a",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1714676284713,
+  "lastUpdate" : 1715011780765,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -100,6 +100,46 @@
             "type" : "constant",
             "value" : false
           },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Maestro de proyectos"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "09fd724e-cc6b-4664-b386-937c0db0bf97",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "zebra-custom"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
           "caption" : {
             "type" : "interpolation"
           },
@@ -164,7 +204,7 @@
           },
           "modalid" : {
             "type" : "constant",
-            "value" : "ModActualizar"
+            "value" : ""
           }
         },
         "reference" : "4f227b2d-8f3e-4823-8c0c-2602bf9ab1bb",

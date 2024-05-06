@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "72fdeacd-947b-484d-85dc-fccd1c9888dd",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1714675976599,
+  "lastUpdate" : 1715011824221,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -46,7 +46,7 @@
           },
           "processName" : {
             "type" : "constant",
-            "value" : "Proyecto Editar"
+            "value" : "Maestro de Proyectos"
           },
           "processVersion" : {
             "type" : "constant",
@@ -127,7 +127,7 @@
                   },
                   "level" : {
                     "type" : "constant",
-                    "value" : "Level 4"
+                    "value" : "Level 2"
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -135,11 +135,11 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Bsc_proyecto_vn"
+                    "value" : "Proyecto nuevo"
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "left"
+                    "value" : "center"
                   },
                   "dimension" : {
                     "type" : "constant",
