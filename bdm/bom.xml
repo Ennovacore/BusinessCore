@@ -29,12 +29,12 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.BscSucursal">
             <fields>
-                <field type="STRING" length="255" name="bscore_nombre" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="bscproy_nombre" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="bscsuc_nombre" nullable="true" collection="false"/>
-                <field type="STRING" length="13" name="bscsuc_rfc" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="bscsuc_direccion" nullable="true" collection="false"/>
-                <field type="STRING" length="10" name="bscsuc_cp" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="bscore_nombre" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="bscproy_nombre" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="bscsuc_nombre" nullable="false" collection="false"/>
+                <field type="STRING" length="13" name="bscsuc_rfc" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="bscsuc_direccion" nullable="false" collection="false"/>
+                <field type="STRING" length="10" name="bscsuc_cp" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
