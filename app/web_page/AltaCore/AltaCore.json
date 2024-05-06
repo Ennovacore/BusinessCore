@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "168f6543-531d-4df7-bafc-95d0418400bf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1714494027322,
+  "lastUpdate" : 1715023893555,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -31,6 +31,81 @@
               {
                 "type" : "component",
                 "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Lista"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "process"
+                  },
+                  "targetUrl" : {
+                    "type" : "constant",
+                    "value" : "http://"
+                  },
+                  "pageToken" : {
+                    "type" : "constant"
+                  },
+                  "processName" : {
+                    "type" : "constant",
+                    "value" : "EditarCore"
+                  },
+                  "processVersion" : {
+                    "type" : "constant",
+                    "value" : "1.0"
+                  },
+                  "taskId" : {
+                    "type" : "constant"
+                  },
+                  "caseId" : {
+                    "type" : "constant"
+                  },
+                  "target" : {
+                    "type" : "constant",
+                    "value" : "_self"
+                  },
+                  "appToken" : {
+                    "type" : "constant"
+                  },
+                  "urlParams" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "right"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  }
+                },
+                "reference" : "78da3ab7-f3d5-42d0-8db4-631e32b96ba6",
+                "hasValidationError" : false,
+                "id" : "pbLink"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
@@ -43,7 +118,7 @@
                   },
                   "level" : {
                     "type" : "constant",
-                    "value" : "Level 4"
+                    "value" : "Level 3"
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -51,15 +126,19 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Bsccore"
+                    "value" : "Alta Core"
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "left"
+                    "value" : "center"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "42275808-8c94-46de-9b87-72debaae5866",
@@ -304,11 +383,11 @@
                   },
                   "buttonStyle" : {
                     "type" : "constant",
-                    "value" : "primary"
+                    "value" : "success"
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Registrar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -349,7 +428,7 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "center"
+                    "value" : "right"
                   },
                   "dimension" : {
                     "type" : "constant",
