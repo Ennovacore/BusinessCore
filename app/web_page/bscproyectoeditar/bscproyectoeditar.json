@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "9ec49387-7215-4439-bdba-ad67ebf1751a",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1715011780765,
+  "lastUpdate" : 1715022417679,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -204,7 +204,7 @@
           },
           "modalid" : {
             "type" : "constant",
-            "value" : ""
+            "value" : "ModActualizar"
           }
         },
         "reference" : "4f227b2d-8f3e-4823-8c0c-2602bf9ab1bb",
