@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "0c3a11e5-fea5-41c1-9e0e-7acf32b2a6f6",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1715028220850,
+  "lastUpdate" : 1715028903764,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -948,23 +948,6 @@
     ]
   ],
   "variables" : {
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{\r",
-        "  \"sucursalPersistenceId\" : \"\",\r",
-        "  \"editarsucursalInput\" : {\r",
-        "    \"bscore_nombre\" : \"\",\r",
-        "    \"bscproy_nombre\" : \"\",\r",
-        "    \"bscsuc_nombre\" : \"\",\r",
-        "    \"bscsuc_rfc\" : \"\",\r",
-        "    \"bscsuc_direccion\" : \"\",\r",
-        "    \"bscsuc_cp\" : \"\"\r",
-        "  }\r",
-        "}"
-      ],
-      "exposed" : false
-    },
     "submit_errors_list" : {
       "type" : "expression",
       "value" : [
@@ -983,9 +966,27 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tsucursalPersistenceId: $data.formInput.sucursalPersistenceId,",
-        "\teditarsucursalInput: $data.formInput.editarsucursalInput",
+        "if( $data.DataTableSucursalesJSON )",
+        "{",
+        "\treturn {",
+        "\t    ",
+        "\t    sucursalPersistenceId: $data.DataTableSucursalesJSON.persistenceId_string,",
+        "\t\t",
+        "\t    editarsucursalInput: {",
+        "\t\t\tbscore_nombre: $data.DataTableSucursalesJSON.bscore_nombre !== undefined ? $data.DataTableSucursalesJSON.bscore_nombre : null,",
+        "\t\t\tbscproy_nombre: $data.DataTableSucursalesJSON.bscproy_nombre !== undefined ? $data.DataTableSucursalesJSON.bscproy_nombre : null,",
+        "\t\t\t",
+        "\t\t\tbscsuc_nombre: $data.DataTableSucursalesJSON.bscproy_nombre !== undefined ? $data.DataTableSucursalesJSON.bscsuc_nombre : null,",
+        "\t\t\t",
+        "\t\t\tbscsuc_rfc: $data.DataTableSucursalesJSON.bscproy_nombre !== undefined ? $data.DataTableSucursalesJSON.bscsuc_rfc : null,",
+        "\t\t\t",
+        "\t\t\tbscsuc_direccion: $data.DataTableSucursalesJSON.bscproy_nombre !== undefined ? $data.DataTableSucursalesJSON.bscsuc_direccion : null,",
+        "\t\t\t",
+        "\t\t\tbscsuc_cp: $data.DataTableSucursalesJSON.bscproy_nombre !== undefined ? $data.DataTableSucursalesJSON.bscsuc_cp : null",
+        "\t\t\t",
+        "\t\t\t",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
