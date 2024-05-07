@@ -32,7 +32,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_TKGS-QyhEe-5bORSfy-kzw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_TKGS-gyhEe-5bORSfy-kzw" name="TipoMaq" content="d58915af-7aa0-4918-a5ad-04c42f17478f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_jBMGYAysEe-e2OtdftQiNw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_TKGS-wyhEe-5bORSfy-kzw" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_TKGS_AyhEe-5bORSfy-kzw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -122,7 +122,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_TKGTOgyhEe-5bORSfy-kzw" fontName="Segoe UI"/>
       <styles xmi:type="notation:LineStyle" xmi:id="_TKGTOwyhEe-5bORSfy-kzw"/>
       <styles xmi:type="notation:FillStyle" xmi:id="_TKGTPAyhEe-5bORSfy-kzw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TKGTPQyhEe-5bORSfy-kzw" width="800" height="250"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TKGTPQyhEe-5bORSfy-kzw" width="650" height="250"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_TKGTPgyhEe-5bORSfy-kzw"/>
     <edges xmi:type="notation:Connector" xmi:id="_TKGTPwyhEe-5bORSfy-kzw" type="4001" element="_TKGS_QyhEe-5bORSfy-kzw" source="_TKGTKQyhEe-5bORSfy-kzw" target="_TKGTMQyhEe-5bORSfy-kzw" roundedBendpointsRadius="10" routing="Rectilinear">
