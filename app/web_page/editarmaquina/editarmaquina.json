@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "d6af367b-c08c-475f-bc08-4d505061ceb4",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1715114480705,
+  "lastUpdate" : 1715114681337,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -27,6 +27,81 @@
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Nuevo"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "process"
+                  },
+                  "targetUrl" : {
+                    "type" : "constant",
+                    "value" : "http://"
+                  },
+                  "pageToken" : {
+                    "type" : "constant"
+                  },
+                  "processName" : {
+                    "type" : "constant",
+                    "value" : "Alta Maquina"
+                  },
+                  "processVersion" : {
+                    "type" : "constant",
+                    "value" : "1.0"
+                  },
+                  "taskId" : {
+                    "type" : "constant"
+                  },
+                  "caseId" : {
+                    "type" : "constant"
+                  },
+                  "target" : {
+                    "type" : "constant",
+                    "value" : "_self"
+                  },
+                  "appToken" : {
+                    "type" : "constant"
+                  },
+                  "urlParams" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "right"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  }
+                },
+                "reference" : "3c70560b-6f7d-40dd-922e-372d7fa812a1",
+                "hasValidationError" : false,
+                "id" : "pbLink"
+              }
+            ],
             [
               {
                 "type" : "component",
