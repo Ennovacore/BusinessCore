@@ -4,9 +4,124 @@
   "type" : "form",
   "uuid" : "14aba312-41ef-40e8-b601-ee1aeac1283d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1715124705621,
+  "lastUpdate" : 1715125909306,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Nuevo"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "process"
+          },
+          "targetUrl" : {
+            "type" : "constant",
+            "value" : "http://www.google.com"
+          },
+          "pageToken" : {
+            "type" : "constant"
+          },
+          "processName" : {
+            "type" : "constant",
+            "value" : "Alta Detalle de Maquinas"
+          },
+          "processVersion" : {
+            "type" : "constant",
+            "value" : "1.0"
+          },
+          "taskId" : {
+            "type" : "constant"
+          },
+          "caseId" : {
+            "type" : "constant"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_self"
+          },
+          "appToken" : {
+            "type" : "constant"
+          },
+          "urlParams" : {
+            "type" : "constant"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "right"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          }
+        },
+        "reference" : "527e7fb8-7787-4ed1-89aa-85086dd1b31b",
+        "hasValidationError" : false,
+        "id" : "pbLink"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Maestro Detalle de Maquinas"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "aa50886c-d6dc-477c-a02b-7e5b47311d34",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
     [
       {
         "type" : "component",
@@ -35,13 +150,13 @@
           "headers" : {
             "type" : "constant",
             "value" : [
-              "Bscore_nombre",
-              "Bscproy_nombre",
-              "Bscsuc_nombre",
-              "Maq_nombre",
-              "Maqd_cd_k",
-              "Maqd_parametro",
-              "Maqd_valor"
+              "Bissnes Core ID",
+              "BSC Proyecto",
+              "BSC Sucursal ID",
+              "Maquina Id",
+              "Maquina Detalle Id",
+              "Característica",
+              "Valor Carac."
             ]
           },
           "type" : {
@@ -147,6 +262,46 @@
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Detalle de Maquina"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 2"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  }
+                },
+                "reference" : "0eaf8aae-5d81-424b-b185-ca7770881032",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
             [
               {
                 "type" : "component",
