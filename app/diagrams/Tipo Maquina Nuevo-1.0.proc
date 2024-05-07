@@ -24,11 +24,11 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_61VN7wvkEe-sh_1ZSlj9HA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_P25twAvmEe-sh_1ZSlj9HA" name="maqtpo" dataType="_61VOFAvkEe-sh_1ZSlj9HA" className="com.company.model.MaqTpoMaquina">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_TCdDxQvmEe-sh_1ZSlj9HA" name="initMaqtpo()" content="import org.bonitasoft.engine.bpm.process.ProcessInstance;&#xD;&#xA;&#xD;&#xA;import com.company.model.MaqTpoMaquina;&#xD;&#xA;&#xD;&#xA;// Get current process instance information&#xD;&#xA;// We use it to store the id of the user who start the process in the ExpenseReport business variable&#xD;&#xA;ProcessInstance processInstance = apiAccessor.processAPI.getProcessInstance(processInstanceId)&#xD;&#xA;&#xD;&#xA;// Create the new ExpenseReport object&#xD;&#xA;MaqTpoMaquina newReport = new MaqTpoMaquina(bscore_nombre: maqtpoInput?.bscore_nombre,&#xD;&#xA;&#x9;bscproy_nombre : maqtpoInput?.bscproy_nombre,&#xD;&#xA;&#x9;bscsuc_nombre : maqtpoInput?.bscsuc_nombre,&#xD;&#xA;&#x9;maqtpo_nombre : maqtpoInput?.maqtpo_nombre,&#xD;&#xA;&#x9;maqtpo_desc_larga : maqtpoInput?.maqtpo_desc_larga);&#xD;&#xA;&#xD;&#xA;return newReport;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.MaqTpoMaquina">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_hfqvcAyPEe-r1d43NghV6Q" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_hfrWgAyPEe-r1d43NghV6Q" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_hfrWgQyPEe-r1d43NghV6Q" name="maqtpoInput" type="COMPLEX"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_sGLSwAydEe-8WtcQryn5bQ" name="maqTipo" dataType="_61VOFAvkEe-sh_1ZSlj9HA" className="com.company.model.MaqTpo">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_15-vIAydEe-8WtcQryn5bQ" name="initMaqTipo()" content="import org.bonitasoft.engine.bpm.process.ProcessInstance;&#xD;&#xA;&#xD;&#xA;import com.company.model.MaqTpo;&#xD;&#xA;&#xD;&#xA;// Get current process instance information&#xD;&#xA;// We use it to store the id of the user who start the process in the ExpenseReport business variable&#xD;&#xA;ProcessInstance processInstance = apiAccessor.processAPI.getProcessInstance(processInstanceId)&#xD;&#xA;&#xD;&#xA;// Create the new ExpenseReport object&#xD;&#xA;MaqTpo newReport = new MaqTpo(bscore_nombre: maqTipoInput?.bscore_nombre,&#xD;&#xA;&#x9;bscproy_nombre : maqTipoInput?.bscproy_nombre,&#xD;&#xA;&#x9;bscsuc_nombre : maqTipoInput?.bscsuc_nombre,&#xD;&#xA;&#x9;maqtpo_nombre : maqTipoInput?.maqtpo_nombre,&#xD;&#xA;&#x9;maqtpo_desc_larga : maqTipoInput?.maqtpo_desc_larga);&#xD;&#xA;&#xD;&#xA;return newReport;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.MaqTpo">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_EJ3N4AyhEe-5bORSfy-kzw" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_EJ3N4QyhEe-5bORSfy-kzw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_EJ3N4gyhEe-5bORSfy-kzw" name="maqTipoInput" type="COMPLEX"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_61VN9AvkEe-sh_1ZSlj9HA">
@@ -47,28 +47,13 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_61VN-wvkEe-sh_1ZSlj9HA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_61VN_AvkEe-sh_1ZSlj9HA">
-        <inputs xmi:type="process:ContractInput" xmi:id="_TCb1oAvmEe-sh_1ZSlj9HA" name="maqtpoInput" type="COMPLEX" dataReference="maqtpo">
-          <inputs xmi:type="process:ContractInput" xmi:id="_TCb1oQvmEe-sh_1ZSlj9HA" name="bscore_nombre"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_TCb1ogvmEe-sh_1ZSlj9HA" name="bscproy_nombre"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_TCb1owvmEe-sh_1ZSlj9HA" name="bscsuc_nombre"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_TCb1pAvmEe-sh_1ZSlj9HA" name="maqtpo_nombre"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_TCb1pQvmEe-sh_1ZSlj9HA" name="maqtpo_desc_larga"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_1552oAydEe-8WtcQryn5bQ" name="maqTipoInput" type="COMPLEX" dataReference="maqTipo">
+          <inputs xmi:type="process:ContractInput" xmi:id="_1552oQydEe-8WtcQryn5bQ" name="bscore_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_1552ogydEe-8WtcQryn5bQ" name="bscproy_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_1552owydEe-8WtcQryn5bQ" name="bscsuc_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_1552pAydEe-8WtcQryn5bQ" name="maqtpo_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_1552pQydEe-8WtcQryn5bQ" name="maqtpo_desc_larga"/>
         </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_TCdDwAvmEe-sh_1ZSlj9HA" expression="maqtpoInput?.bscore_nombre != null" errorMessage="bscore_nombre is mandatory for MaqTpoMaquina" name="mandatory_maqtpoInput_bscore_nombre">
-          <inputNames>maqtpoInput</inputNames>
-        </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_TCdDwQvmEe-sh_1ZSlj9HA" expression="maqtpoInput?.bscproy_nombre != null" errorMessage="bscproy_nombre is mandatory for MaqTpoMaquina" name="mandatory_maqtpoInput_bscproy_nombre">
-          <inputNames>maqtpoInput</inputNames>
-        </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_TCdDwgvmEe-sh_1ZSlj9HA" expression="maqtpoInput?.bscsuc_nombre != null" errorMessage="bscsuc_nombre is mandatory for MaqTpoMaquina" name="mandatory_maqtpoInput_bscsuc_nombre">
-          <inputNames>maqtpoInput</inputNames>
-        </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_TCdDwwvmEe-sh_1ZSlj9HA" expression="maqtpoInput?.maqtpo_nombre != null" errorMessage="maqtpo_nombre is mandatory for MaqTpoMaquina" name="mandatory_maqtpoInput_maqtpo_nombre">
-          <inputNames>maqtpoInput</inputNames>
-        </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_TCdDxAvmEe-sh_1ZSlj9HA" expression="!maqtpoInput?.maqtpo_desc_larga || maqtpoInput?.maqtpo_desc_larga.isLong()" errorMessage="A Long value is expected for MaqTpoMaquina.maqtpo_desc_larga" name="type_long_maqtpoInput_maqtpo_desc_larga">
-          <inputNames>maqtpoInput</inputNames>
-        </constraints>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_61VN_QvkEe-sh_1ZSlj9HA">
         <name xmi:type="expression:Expression" xmi:id="_61VN_gvkEe-sh_1ZSlj9HA" content="" returnTypeFixed="true"/>
