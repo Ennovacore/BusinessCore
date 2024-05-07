@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
-  <process:MainProcess xmi:id="_KCp08AybEe-8WtcQryn5bQ" name="MasterTipoMaquina" bonitaModelVersion="8">
-    <elements xmi:type="process:Pool" xmi:id="_KCqcAAybEe-8WtcQryn5bQ" name="MasterTipoMaquina">
+  <process:MainProcess xmi:id="_KCp08AybEe-8WtcQryn5bQ" name="Maestro Tipo Maquina" bonitaModelVersion="8">
+    <elements xmi:type="process:Pool" xmi:id="_KCqcAAybEe-8WtcQryn5bQ" name="Maestro Tipo Maquina">
       <elements xmi:type="process:Lane" xmi:id="_KCqcAQybEe-8WtcQryn5bQ" name="Employee lane" actor="_KCqcIwybEe-8WtcQryn5bQ">
         <elements xmi:type="process:StartEvent" xmi:id="_KCqcAgybEe-8WtcQryn5bQ" name="Start1" outgoing="_KCqcHQybEe-8WtcQryn5bQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_KCqcAwybEe-8WtcQryn5bQ" name="" content="" returnTypeFixed="true"/>
@@ -13,7 +13,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_KCqcCAybEe-8WtcQryn5bQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_KCqcCQybEe-8WtcQryn5bQ" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_KCqcCgybEe-8WtcQryn5bQ" name="EditarMaquina" outgoing="_KCqcIAybEe-8WtcQryn5bQ" incoming="_KCqcHQybEe-8WtcQryn5bQ">
+        <elements xmi:type="process:ServiceTask" xmi:id="_KCqcCgybEe-8WtcQryn5bQ" name="Editar Tipo Maquina" outgoing="_KCqcIAybEe-8WtcQryn5bQ" incoming="_KCqcHQybEe-8WtcQryn5bQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_KCqcCwybEe-8WtcQryn5bQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_KCqcDAybEe-8WtcQryn5bQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_KCqcDQybEe-8WtcQryn5bQ" name="" content="" returnTypeFixed="true"/>
@@ -34,7 +34,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_KCqcGQybEe-8WtcQryn5bQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_KCqcGgybEe-8WtcQryn5bQ" name="newForm" content="b6edfee3-abba-4668-b87d-b90584972515" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_KCqcGgybEe-8WtcQryn5bQ" name="EditarTipoMaquina" content="b6edfee3-abba-4668-b87d-b90584972515" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_KCqcGwybEe-8WtcQryn5bQ" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_KCqcHAybEe-8WtcQryn5bQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
