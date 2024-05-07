@@ -24,17 +24,17 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_KCqcEgybEe-8WtcQryn5bQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_KCqcEwybEe-8WtcQryn5bQ" name="bsccore" dataType="_KCqcQgybEe-8WtcQryn5bQ" className="com.company.model.BscCore">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_KCqcFAybEe-8WtcQryn5bQ" name="initBsccore()" content="import java.time.OffsetDateTime&#xD;&#xA;&#xD;&#xA;import com.company.model.BscCore&#xD;&#xA;&#xD;&#xA;// Find the already existing expense report to update using the unique id managed by Bonita (PersistenceId)&#xD;&#xA;def expenseReport = bscCoreDAO.findByPersistenceId(Long.parseLong(persistenceId))&#xD;&#xA;&#xD;&#xA;expenseReport.bscore_nombre = bsccoreInput?.bscore_nombre&#xD;&#xA;expenseReport.bscore_razonsocial = bsccoreInput?.bscore_razonsocial&#xD;&#xA;&#xD;&#xA;expenseReport&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.BscCore">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_KCqcFQybEe-8WtcQryn5bQ" name="bsccoreInput" type="COMPLEX"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_KCqcFgybEe-8WtcQryn5bQ" name="bscCoreDAO" content="bscCoreDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.BscCoreDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_KCqcFwybEe-8WtcQryn5bQ" name="persistenceId">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_KCqcGAybEe-8WtcQryn5bQ"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_P8AQIAyqEe-5bORSfy-kzw" name="tipoMaq" dataType="_KCqcQgybEe-8WtcQryn5bQ" className="com.company.model.MaqTpo">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_SfkZEAyqEe-5bORSfy-kzw" name="initTipoMaq()" content="import java.time.OffsetDateTime&#xD;&#xA;&#xD;&#xA;import com.company.model.MaqTpo&#xD;&#xA;&#xD;&#xA;// Find the already existing expense report to update using the unique id managed by Bonita (PersistenceId)&#xD;&#xA;def expenseReport = maqTpoDAO.findByPersistenceId(Long.parseLong(persistenceId))&#xD;&#xA;&#xD;&#xA;expenseReport.bscore_nombre = tipoMaqInput?.bscore_nombre&#xD;&#xA;expenseReport.bscproy_nombre = tipoMaqInput?.bscproy_nombre&#xD;&#xA;expenseReport.bscsuc_nombre = tipoMaqInput?.bscsuc_nombre&#xD;&#xA;expenseReport.maqtpo_nombre = tipoMaqInput?.maqtpo_nombre&#xD;&#xA;expenseReport.maqtpo_desc_larga = tipoMaqInput?.maqtpo_desc_larga&#xD;&#xA;&#xD;&#xA;expenseReport&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.MaqTpo">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_06jmkAyqEe-5bORSfy-kzw" name="tipoMaqInput" type="COMPLEX"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_06jmkQyqEe-5bORSfy-kzw" name="persistenceId">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_06jmkgyqEe-5bORSfy-kzw"/>
           </referencedElements>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_06jmkwyqEe-5bORSfy-kzw" name="maqTpoDAO" content="maqTpoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.MaqTpoDAO" returnTypeFixed="true"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_KCqcGQybEe-8WtcQryn5bQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_KCqcGgybEe-8WtcQryn5bQ" name="EditarCore" content="ff7c78e2-6e6e-423a-8603-93ca7475d30b" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_KCqcGgybEe-8WtcQryn5bQ" name="newForm" content="b6edfee3-abba-4668-b87d-b90584972515" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_KCqcGwybEe-8WtcQryn5bQ" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_KCqcHAybEe-8WtcQryn5bQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -52,13 +52,13 @@
         <inputs xmi:type="process:ContractInput" xmi:id="_KCqcJQybEe-8WtcQryn5bQ" name="persistenceId">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_KCqcJgybEe-8WtcQryn5bQ"/>
         </inputs>
-        <inputs xmi:type="process:ContractInput" xmi:id="_KCqcJwybEe-8WtcQryn5bQ" name="bsccoreInput" type="COMPLEX" dataReference="bsccore">
-          <inputs xmi:type="process:ContractInput" xmi:id="_KCqcKAybEe-8WtcQryn5bQ" name="bscore_nombre"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_KCqcKQybEe-8WtcQryn5bQ" name="bscore_razonsocial"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_Sd1TsAyqEe-5bORSfy-kzw" name="tipoMaqInput" type="COMPLEX" dataReference="tipoMaq">
+          <inputs xmi:type="process:ContractInput" xmi:id="_Sfh80AyqEe-5bORSfy-kzw" name="bscore_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Sfh80QyqEe-5bORSfy-kzw" name="bscproy_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Sfh80gyqEe-5bORSfy-kzw" name="bscsuc_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Sfh80wyqEe-5bORSfy-kzw" name="maqtpo_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Sfh81AyqEe-5bORSfy-kzw" name="maqtpo_desc_larga"/>
         </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_KCqcKgybEe-8WtcQryn5bQ" expression="bsccoreInput?.bscore_nombre != null" errorMessage="bscore_nombre is mandatory for BscCore" name="mandatory_bsccoreInput_bscore_nombre">
-          <inputNames>bsccoreInput</inputNames>
-        </constraints>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_KCqcKwybEe-8WtcQryn5bQ">
         <name xmi:type="expression:Expression" xmi:id="_KCqcLAybEe-8WtcQryn5bQ" content="" returnTypeFixed="true"/>

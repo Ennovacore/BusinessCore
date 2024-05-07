@@ -49,7 +49,11 @@
                 <field type="STRING" length="255" name="maqtpo_desc_larga" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="query" content="SELECT m &#13;&#10;FROM MaqTpo m &#13;&#10;ORDER BY m.persistenceId ASC" returnType="com.company.model.MaqTpo">
+                    <queryParameters/>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
     </businessObjects>
