@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "ff7c78e2-6e6e-423a-8603-93ca7475d30b",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1715023378787,
+  "lastUpdate" : 1715111389689,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -135,7 +135,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Editar"
+                    "value" : "Editar Business Core"
                   },
                   "alignment" : {
                     "type" : "constant",
