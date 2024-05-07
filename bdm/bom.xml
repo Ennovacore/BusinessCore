@@ -56,13 +56,13 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.MaqMaquinadet">
             <fields>
-                <field type="STRING" length="255" name="bscore_nombre" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="bscproy_nombre" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="bscsuc_nombre" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="maq_nombre" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="maqd_cd_k" nullable="true" collection="false"/>
-                <field type="STRING" length="60" name="maqd_parametro" nullable="true" collection="false"/>
-                <field type="STRING" length="60" name="maqd_valor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="bscore_nombre" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="bscproy_nombre" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="bscsuc_nombre" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="maq_nombre" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="maqd_cd_k" nullable="false" collection="false"/>
+                <field type="STRING" length="60" name="maqd_parametro" nullable="false" collection="false"/>
+                <field type="STRING" length="60" name="maqd_valor" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
