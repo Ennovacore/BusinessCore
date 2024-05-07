@@ -34,7 +34,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_KCqcGQybEe-8WtcQryn5bQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_KCqcGgybEe-8WtcQryn5bQ" name="newForm" content="b6edfee3-abba-4668-b87d-b90584972515" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_KCqcGgybEe-8WtcQryn5bQ" name="TipoMaq" content="d58915af-7aa0-4918-a5ad-04c42f17478f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_KCqcGwybEe-8WtcQryn5bQ" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_KCqcHAybEe-8WtcQryn5bQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

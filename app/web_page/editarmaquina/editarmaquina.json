@@ -1,10 +1,10 @@
 {
-  "id" : "bscsucursaleditar",
-  "name" : "bscsucursaleditar",
+  "id" : "editarmaquina",
+  "name" : "editarmaquina",
   "type" : "form",
-  "uuid" : "0c3a11e5-fea5-41c1-9e0e-7acf32b2a6f6",
+  "uuid" : "d6af367b-c08c-475f-bc08-4d505061ceb4",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1715113574338,
+  "lastUpdate" : 1715114480705,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -13,17 +13,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "be442cd2-33f5-4d5b-be4f-9dc0f8427689",
+        "propertyValues" : { },
+        "reference" : "1930e171-90b6-44e5-90c1-ba604fbdc1a9",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -32,85 +23,10 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "bd18b820-ba8e-4149-a8b0-2e58b7e254d2",
+          "reference" : "5fa6baf0-c169-4970-a799-64f491a70ad7",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Nuevo"
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "process"
-                  },
-                  "targetUrl" : {
-                    "type" : "constant",
-                    "value" : "http://"
-                  },
-                  "pageToken" : {
-                    "type" : "constant"
-                  },
-                  "processName" : {
-                    "type" : "constant",
-                    "value" : "Alta Sucursal"
-                  },
-                  "processVersion" : {
-                    "type" : "constant",
-                    "value" : "1.0"
-                  },
-                  "taskId" : {
-                    "type" : "constant"
-                  },
-                  "caseId" : {
-                    "type" : "constant"
-                  },
-                  "target" : {
-                    "type" : "constant",
-                    "value" : "_self"
-                  },
-                  "appToken" : {
-                    "type" : "constant"
-                  },
-                  "urlParams" : {
-                    "type" : "constant"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "right"
-                  },
-                  "buttonStyle" : {
-                    "type" : "constant",
-                    "value" : "primary"
-                  }
-                },
-                "reference" : "ac3c544e-9a82-4391-a583-57c0ff571439",
-                "hasValidationError" : false,
-                "id" : "pbLink"
-              }
-            ],
             [
               {
                 "type" : "component",
@@ -135,7 +51,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Maestro de sucursales"
+                    "value" : "Edición de Maquina"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -150,7 +66,7 @@
                     "value" : false
                   }
                 },
-                "reference" : "3f15fb90-f59c-4e13-8f26-0f7009058250",
+                "reference" : "92925086-8b6d-45f0-b940-aad8aba936b7",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -184,12 +100,13 @@
                   "headers" : {
                     "type" : "constant",
                     "value" : [
-                      "Business Core",
-                      "Proyecto",
-                      "Sucursal",
-                      "Rfc",
-                      "Dirección",
-                      "C.P."
+                      "Bissnes Core ID",
+                      "BSC Proyecto ID",
+                      "BSC Sucursal ID",
+                      "Tipo de Maquina ID",
+                      "Maquina ID",
+                      "Descripción Larga",
+                      "Descripción Corta"
                     ]
                   },
                   "type" : {
@@ -205,7 +122,7 @@
                   },
                   "content" : {
                     "type" : "expression",
-                    "value" : "DataTableSucursales"
+                    "value" : "query"
                   },
                   "columnsKey" : {
                     "type" : "constant",
@@ -213,9 +130,10 @@
                       "bscore_nombre",
                       "bscproy_nombre",
                       "bscsuc_nombre",
-                      "bscsuc_rfc",
-                      "bscsuc_direccion",
-                      "bscsuc_cp"
+                      "maqtpo_nombre",
+                      "maq_nombre",
+                      "maq_deslg",
+                      "maq_desch"
                     ]
                   },
                   "sortColumns" : {
@@ -223,7 +141,7 @@
                   },
                   "selectedRow" : {
                     "type" : "variable",
-                    "value" : "DataTableSucursalesJSON"
+                    "value" : "DataTableMaquinaJSON"
                   },
                   "pageSize" : {
                     "type" : "constant",
@@ -238,7 +156,7 @@
                   },
                   "condensed" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "bordered" : {
                     "type" : "constant",
@@ -249,7 +167,7 @@
                     "value" : "ModActualizar"
                   }
                 },
-                "reference" : "b6df82eb-c6ee-4435-ba87-07c120b2cc2b",
+                "reference" : "c5ea62db-6444-4f4d-b2d1-19082ce703dc",
                 "hasValidationError" : false,
                 "id" : "customDatatableModal"
               }
@@ -298,17 +216,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
                   }
                 },
-                "reference" : "03ffdb82-5196-4ec1-b470-fadb509b758d",
+                "reference" : "2d4e4570-e808-4e8f-a3ef-db02b411e7c2",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -345,7 +255,7 @@
             "value" : true
           }
         },
-        "reference" : "62e1f249-8338-4427-9563-1df2830f504b",
+        "reference" : "91adb526-c215-4a35-9d97-a5c0e12a1090",
         "hasValidationError" : false,
         "id" : "pbModalContainer",
         "container" : {
@@ -354,7 +264,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "6d0ae595-5f08-4450-894e-2a5a70ed3566",
+          "reference" : "589efdbb-5a8b-4e5d-ae88-4dde0809f3f0",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -362,9 +272,9 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
@@ -382,7 +292,7 @@
                   },
                   "required" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -394,7 +304,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Bisness Core"
+                    "value" : "Bissnes Core ID"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -402,7 +312,7 @@
                   },
                   "labelWidth" : {
                     "type" : "constant",
-                    "value" : 4
+                    "value" : 1
                   },
                   "placeholder" : {
                     "type" : "interpolation"
@@ -421,10 +331,10 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "DataTableSucursalesJSON.bscore_nombre"
+                    "value" : "DataTableMaquinaJSON.bscore_nombre"
                   }
                 },
-                "reference" : "a7e48632-10f0-4564-a1da-94778d4005af",
+                "reference" : "e13a656d-4404-4327-96de-c8958759a663",
                 "hasValidationError" : false,
                 "id" : "pbSelect"
               }
@@ -433,9 +343,9 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
@@ -453,7 +363,7 @@
                   },
                   "required" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -465,7 +375,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Proyecto"
+                    "value" : "BSC Proyecto ID"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -473,7 +383,7 @@
                   },
                   "labelWidth" : {
                     "type" : "constant",
-                    "value" : 4
+                    "value" : 1
                   },
                   "placeholder" : {
                     "type" : "interpolation"
@@ -492,10 +402,10 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "DataTableSucursalesJSON.bscproy_nombre"
+                    "value" : "DataTableMaquinaJSON.bscproy_nombre"
                   }
                 },
-                "reference" : "e4087906-cc3e-4e01-97a2-5f0c5e21b549",
+                "reference" : "f96ed921-5d90-44a2-a0e9-b18a442a99fd",
                 "hasValidationError" : false,
                 "id" : "pbSelect"
               }
@@ -504,9 +414,9 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
@@ -518,23 +428,15 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
                   "required" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "minLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "maxLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "readOnly" : {
                     "type" : "constant",
                     "value" : false
                   },
@@ -544,7 +446,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Sucursal"
+                    "value" : "BSC Sucursal ID"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -552,46 +454,40 @@
                   },
                   "labelWidth" : {
                     "type" : "constant",
-                    "value" : 4
+                    "value" : 1
                   },
                   "placeholder" : {
                     "type" : "interpolation"
                   },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "sucursal"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant",
+                    "value" : "bscsuc_nombre"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant",
+                    "value" : "bscsuc_nombre"
+                  },
                   "value" : {
                     "type" : "variable",
-                    "value" : "DataTableSucursalesJSON.bscsuc_nombre"
-                  },
-                  "debounce" : {
-                    "type" : "constant",
-                    "value" : 0
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
-                  },
-                  "min" : {
-                    "type" : "constant"
-                  },
-                  "max" : {
-                    "type" : "constant"
-                  },
-                  "step" : {
-                    "type" : "constant",
-                    "value" : 1
+                    "value" : "DataTableMaquinaJSON.bscsuc_nombre"
                   }
                 },
-                "reference" : "e9020a51-baf0-45e8-8e5a-2a56511c877f",
+                "reference" : "98ec0f16-a293-4141-97fa-76fcf84cea44",
                 "hasValidationError" : false,
-                "id" : "pbInput"
+                "id" : "pbSelect"
               }
             ],
             [
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
@@ -603,23 +499,15 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
                   "required" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "minLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "maxLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "readOnly" : {
                     "type" : "constant",
                     "value" : false
                   },
@@ -629,7 +517,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Rfc"
+                    "value" : "Tipo de Maquina ID"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -637,60 +525,89 @@
                   },
                   "labelWidth" : {
                     "type" : "constant",
-                    "value" : 4
+                    "value" : 1
                   },
                   "placeholder" : {
                     "type" : "interpolation"
                   },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "tipodemaquina"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant",
+                    "value" : "maqtpo_nombre"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant",
+                    "value" : "maqtpo_nombre"
+                  },
                   "value" : {
                     "type" : "variable",
-                    "value" : "DataTableSucursalesJSON.bscsuc_rfc"
-                  },
-                  "debounce" : {
-                    "type" : "constant",
-                    "value" : 0
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
-                  },
-                  "min" : {
-                    "type" : "constant"
-                  },
-                  "max" : {
-                    "type" : "constant"
-                  },
-                  "step" : {
-                    "type" : "constant",
-                    "value" : 1
+                    "value" : "DataTableMaquinaJSON.maqtpo_nombre"
                   }
                 },
-                "reference" : "04cf1ee4-2072-4f6f-8534-64e435d9ac92",
+                "reference" : "779cbc46-23cd-4091-a2e3-a1be0904ced6",
                 "hasValidationError" : false,
-                "id" : "pbInput"
+                "id" : "pbSelect"
               }
             ],
             [
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "cssClasses" : {
+                  "labelHidden" : {
                     "type" : "constant",
-                    "value" : ""
+                    "value" : false
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "required" : {
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "readOnly" : {
                     "type" : "constant",
                     "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Maquina Id"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "DataTableMaquinaJSON.maq_nombre"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -704,40 +621,9 @@
                     "type" : "constant",
                     "value" : ""
                   },
-                  "readOnly" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Dirección"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "placeholder" : {
-                    "type" : "interpolation"
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "DataTableSucursalesJSON.bscsuc_direccion"
-                  },
                   "debounce" : {
                     "type" : "constant",
                     "value" : 0
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
                   },
                   "min" : {
                     "type" : "constant"
@@ -750,32 +636,68 @@
                     "value" : 1
                   }
                 },
-                "reference" : "9888cc3e-9e87-417b-8e72-d4e0732afe1d",
+                "reference" : "28d11c0b-6c55-4e0f-8b6a-d95d26f9b575",
                 "hasValidationError" : false,
-                "id" : "pbInput"
+                "id" : "pbInput",
+                "description" : ""
               }
             ],
             [
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "cssClasses" : {
+                  "labelHidden" : {
                     "type" : "constant",
-                    "value" : ""
+                    "value" : false
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "required" : {
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "readOnly" : {
                     "type" : "constant",
                     "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Descripción Larga"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "DataTableMaquinaJSON.maq_deslg"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -789,40 +711,9 @@
                     "type" : "constant",
                     "value" : ""
                   },
-                  "readOnly" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "C.P."
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "placeholder" : {
-                    "type" : "interpolation"
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "DataTableSucursalesJSON.bscsuc_cp"
-                  },
                   "debounce" : {
                     "type" : "constant",
                     "value" : 0
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
                   },
                   "min" : {
                     "type" : "constant"
@@ -835,9 +726,100 @@
                     "value" : 1
                   }
                 },
-                "reference" : "2b55e515-fa09-4476-91b5-f0c50a86f512",
+                "reference" : "2567a429-ebb6-4b9b-a386-ec3e95faf494",
                 "hasValidationError" : false,
-                "id" : "pbInput"
+                "id" : "pbInput",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Descripción Corta"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "DataTableMaquinaJSON.maq_desch"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "debounce" : {
+                    "type" : "constant",
+                    "value" : 0
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "5ceca7ec-3e2b-4b0b-91f8-ae78cf95c6a2",
+                "hasValidationError" : false,
+                "id" : "pbInput",
+                "description" : ""
               }
             ],
             [
@@ -908,7 +890,7 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "right"
+                    "value" : "center"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -936,7 +918,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "ebb8b2a5-bbb6-4f29-a86f-30c9baf63f62",
+                "reference" : "66bb1255-1ecd-4d7c-814f-9d02009156b0",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -948,6 +930,24 @@
     ]
   ],
   "variables" : {
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"maquinaPersistenceId\" : \"\",\r",
+        "  \"editarmaquinaInput\" : {\r",
+        "    \"bscore_nombre\" : \"\",\r",
+        "    \"bscproy_nombre\" : \"\",\r",
+        "    \"bscsuc_nombre\" : \"\",\r",
+        "    \"maqtpo_nombre\" : \"\",\r",
+        "    \"maq_nombre\" : \"\",\r",
+        "    \"maq_deslg\" : \"\",\r",
+        "    \"maq_desch\" : \"\"\r",
+        "  }\r",
+        "}"
+      ],
+      "exposed" : false
+    },
     "submit_errors_list" : {
       "type" : "expression",
       "value" : [
@@ -966,24 +966,25 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.DataTableSucursalesJSON )",
+        "if( $data.DataTableMaquinaJSON )",
         "{",
         "\treturn {",
         "\t    ",
-        "\t    sucursalPersistenceId: $data.DataTableSucursalesJSON.persistenceId_string,",
+        "\t    maquinaPersistenceId: $data.DataTableMaquinaJSON.persistenceId_string,",
         "\t\t",
-        "\t    editarsucursalInput: {",
-        "\t\t\tbscore_nombre: $data.DataTableSucursalesJSON.bscore_nombre !== undefined ? $data.DataTableSucursalesJSON.bscore_nombre : null,",
-        "\t\t\tbscproy_nombre: $data.DataTableSucursalesJSON.bscproy_nombre !== undefined ? $data.DataTableSucursalesJSON.bscproy_nombre : null,",
+        "\t    editarmaquinaInput: {",
+        "\t\t\tbscore_nombre: $data.DataTableMaquinaJSON.bscore_nombre !== undefined ? $data.DataTableMaquinaJSON.bscore_nombre : null,",
+        "\t\t\tbscproy_nombre: $data.DataTableMaquinaJSON.bscproy_nombre !== undefined ? $data.DataTableMaquinaJSON.bscproy_nombre : null,",
         "\t\t\t",
-        "\t\t\tbscsuc_nombre: $data.DataTableSucursalesJSON.bscsuc_nombre !== undefined ? $data.DataTableSucursalesJSON.bscsuc_nombre : null,",
+        "\t\t\tbscsuc_nombre: $data.DataTableMaquinaJSON.bscsuc_nombre !== undefined ? $data.DataTableMaquinaJSON.bscsuc_nombre : null,",
         "\t\t\t",
-        "\t\t\tbscsuc_rfc: $data.DataTableSucursalesJSON.bscsuc_rfc !== undefined ? $data.DataTableSucursalesJSON.bscsuc_rfc : null,",
+        "\t\t\tmaqtpo_nombre: $data.DataTableMaquinaJSON.maqtpo_nombre !== undefined ? $data.DataTableMaquinaJSON.maqtpo_nombre : null,",
         "\t\t\t",
-        "\t\t\tbscsuc_direccion: $data.DataTableSucursalesJSON.bscsuc_direccion !== undefined ? $data.DataTableSucursalesJSON.bscsuc_direccion : null,",
+        "\t\t\tmaq_nombre: $data.DataTableMaquinaJSON.maq_nombre !== undefined ? $data.DataTableMaquinaJSON.maq_nombre : null,",
         "\t\t\t",
-        "\t\t\tbscsuc_cp: $data.DataTableSucursalesJSON.bscsuc_cp !== undefined ? $data.DataTableSucursalesJSON.bscsuc_cp : null",
+        "\t\t\tmaq_deslg: $data.DataTableMaquinaJSON.maq_deslg !== undefined ? $data.DataTableMaquinaJSON.maq_deslg : null,",
         "\t\t\t",
+        "\t\t\tmaq_desch: $data.DataTableMaquinaJSON.maq_desch !== undefined ? $data.DataTableMaquinaJSON.maq_desch : null",
         "\t\t\t",
         "\t\t}",
         "\t}",
@@ -991,14 +992,7 @@
       ],
       "exposed" : false
     },
-    "DataTableSucursales" : {
-      "type" : "url",
-      "value" : [
-        "../API/bdm/businessData/com.company.model.BscSucursal?q=find&p=0&c=100000"
-      ],
-      "exposed" : false
-    },
-    "DataTableSucursalesJSON" : {
+    "DataTableMaquinaJSON" : {
       "type" : "json",
       "value" : [
         "{}"
@@ -1018,18 +1012,39 @@
         "{\"displayValue\":\"find [com.company.model.BscProyecto]\",\"businessObjectName\":\"BscProyecto\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.BscProyecto\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
+    },
+    "sucursal" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [com.company.model.BscSucursal]\",\"businessObjectName\":\"BscSucursal\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.BscSucursal\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "tipodemaquina" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [com.company.model.MaqTpo]\",\"businessObjectName\":\"MaqTpo\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.MaqTpo\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "query" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.MaqMaquina?q=find&p=0&c=100000"
+      ],
+      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "3f4d912a-ab79-41b3-aead-773665ed6b5f",
+      "id" : "7a288c7a-ea96-4c62-a417-0ca45b3b9161",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "f1cd72bf-8b99-4cce-b605-d199c4248054",
+      "id" : "c869a879-41a2-45d5-b0fd-21a36eca5ef6",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
