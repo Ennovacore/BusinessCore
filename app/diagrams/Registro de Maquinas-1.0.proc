@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
+  <process:MainProcess xmi:id="_MavzAA1yEe-7yKeMrU9-1g" name="Registro de Maquinas" bonitaModelVersion="8">
+    <elements xmi:type="process:Pool" xmi:id="_MawaEA1yEe-7yKeMrU9-1g" name="Registro de Maquinas">
+      <elements xmi:type="process:Lane" xmi:id="_MawaEQ1yEe-7yKeMrU9-1g" name="Empleado (lane) " actor="_MawaKg1yEe-7yKeMrU9-1g">
+        <elements xmi:type="process:StartEvent" xmi:id="_MawaEg1yEe-7yKeMrU9-1g" name="Inicio1" outgoing="_MawaJw1yEe-7yKeMrU9-1g">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_MawaEw1yEe-7yKeMrU9-1g" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_MawaFA1yEe-7yKeMrU9-1g" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_MawaFQ1yEe-7yKeMrU9-1g" name="" content="" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:EndEvent" xmi:id="_IKHKoA16Ee-7yKeMrU9-1g" name="Fin1" incoming="_IKMDIA16Ee-7yKeMrU9-1g">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_IKIYwQ16Ee-7yKeMrU9-1g" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_IKIYwA16Ee-7yKeMrU9-1g" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_IKIYwg16Ee-7yKeMrU9-1g" name="" content="" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:ServiceTask" xmi:id="_IgGowA16Ee-7yKeMrU9-1g" name="Tarea1" outgoing="_IKMDIA16Ee-7yKeMrU9-1g" incoming="_MawaJw1yEe-7yKeMrU9-1g">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_MawaFw1yEe-7yKeMrU9-1g" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_MawaGA1yEe-7yKeMrU9-1g" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_MawaGQ1yEe-7yKeMrU9-1g" name="" content="" returnTypeFixed="true"/>
+          <loopCondition xmi:type="expression:Expression" xmi:id="_MawaGg1yEe-7yKeMrU9-1g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <loopMaximum xmi:type="expression:Expression" xmi:id="_MawaGw1yEe-7yKeMrU9-1g" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_MawaHA1yEe-7yKeMrU9-1g" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_MawaHQ1yEe-7yKeMrU9-1g" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_MawaHg1yEe-7yKeMrU9-1g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        </elements>
+      </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_Lq9bMA16Ee-7yKeMrU9-1g" name="nuevamaquina" dataType="_MawaQw1yEe-7yKeMrU9-1g" className="com.company.model.MaqMaquinaenc">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_Ph0YAA16Ee-7yKeMrU9-1g" name="initNuevamaquina()" content="def maqMaquinaencVar = new com.company.model.MaqMaquinaenc()&#xD;&#xA;maqMaquinaencVar.bscore_nombre = nuevamaquinaInput?.bscore_nombre&#xD;&#xA;maqMaquinaencVar.bscproy_nombre = nuevamaquinaInput?.bscproy_nombre&#xD;&#xA;maqMaquinaencVar.bscsuc_nombre = nuevamaquinaInput?.bscsuc_nombre&#xD;&#xA;maqMaquinaencVar.maqtpo_nombre = nuevamaquinaInput?.maqtpo_nombre&#xD;&#xA;maqMaquinaencVar.maq_deslg = nuevamaquinaInput?.maq_deslg&#xD;&#xA;maqMaquinaencVar.maq_nombre = nuevamaquinaInput?.maq_nombre&#xD;&#xA;maqMaquinaencVar.maqmaquinadet = {&#xD;&#xA;&#x9;def maqMaquinadetList = []&#xD;&#xA;&#x9;//For each item collected in multiple input&#xD;&#xA;&#x9;nuevamaquinaInput?.maqmaquinadet.each{&#xD;&#xA;&#x9;&#x9;//Add a new composed MaqMaquinadet instance&#xD;&#xA;&#x9;&#x9;maqMaquinadetList.add({ currentMaqMaquinadetInput ->&#xD;&#xA;&#x9;&#x9;&#x9;def maqMaquinadetVar = new com.company.model.MaqMaquinadet()&#xD;&#xA;&#x9;&#x9;&#x9;maqMaquinadetVar.bscore_nombre = currentMaqMaquinadetInput.bscore_nombre&#xD;&#xA;&#x9;&#x9;&#x9;maqMaquinadetVar.bscproy_nombre = currentMaqMaquinadetInput.bscproy_nombre&#xD;&#xA;&#x9;&#x9;&#x9;maqMaquinadetVar.bscsuc_nombre = currentMaqMaquinadetInput.bscsuc_nombre&#xD;&#xA;&#x9;&#x9;&#x9;maqMaquinadetVar.maq_nombre = currentMaqMaquinadetInput.maq_nombre&#xD;&#xA;&#x9;&#x9;&#x9;maqMaquinadetVar.maqd_cd_k = currentMaqMaquinadetInput.maqd_cd_k&#xD;&#xA;&#x9;&#x9;&#x9;maqMaquinadetVar.maqd_parametro = currentMaqMaquinadetInput.maqd_parametro&#xD;&#xA;&#x9;&#x9;&#x9;maqMaquinadetVar.maqd_valor = currentMaqMaquinadetInput.maqd_valor&#xD;&#xA;&#x9;&#x9;&#x9;return maqMaquinadetVar&#xD;&#xA;&#x9;&#x9;}(it))&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return maqMaquinadetList}()&#xD;&#xA;maqMaquinaencVar.maq_desch = nuevamaquinaInput?.maq_desch&#xD;&#xA;return maqMaquinaencVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.MaqMaquinaenc">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_Ph0YAQ16Ee-7yKeMrU9-1g" name="nuevamaquinaInput" type="COMPLEX"/>
+        </defaultValue>
+      </data>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_MawaIw1yEe-7yKeMrU9-1g">
+        <targetForm xmi:type="expression:Expression" xmi:id="_Uz1rQA16Ee-7yKeMrU9-1g" name="registrarnuevamaquina" content="80d140a1-57d3-4f4c-97f5-7f47c13d298d" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      </formMapping>
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_MawaJQ1yEe-7yKeMrU9-1g">
+        <targetForm xmi:type="expression:Expression" xmi:id="_MawaJg1yEe-7yKeMrU9-1g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      </overviewFormMapping>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_MawaJw1yEe-7yKeMrU9-1g" target="_IgGowA16Ee-7yKeMrU9-1g" source="_MawaEg1yEe-7yKeMrU9-1g">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_MawaKA1yEe-7yKeMrU9-1g"/>
+        <condition xmi:type="expression:Expression" xmi:id="_MawaKQ1yEe-7yKeMrU9-1g" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_IKMDIA16Ee-7yKeMrU9-1g" target="_IKHKoA16Ee-7yKeMrU9-1g" source="_IgGowA16Ee-7yKeMrU9-1g">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_IKMqMA16Ee-7yKeMrU9-1g"/>
+        <condition xmi:type="expression:Expression" xmi:id="_IKMqMQ16Ee-7yKeMrU9-1g" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <actors xmi:type="process:Actor" xmi:id="_MawaKg1yEe-7yKeMrU9-1g" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor" initiator="true"/>
+      <contract xmi:type="process:Contract" xmi:id="_MawaKw1yEe-7yKeMrU9-1g">
+        <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ4A16Ee-7yKeMrU9-1g" name="nuevamaquinaInput" type="COMPLEX" dataReference="nuevamaquina">
+          <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ4Q16Ee-7yKeMrU9-1g" name="bscore_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ4g16Ee-7yKeMrU9-1g" name="bscproy_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ4w16Ee-7yKeMrU9-1g" name="bscsuc_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ5A16Ee-7yKeMrU9-1g" name="maqtpo_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ5Q16Ee-7yKeMrU9-1g" name="maq_deslg"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ5g16Ee-7yKeMrU9-1g" name="maq_nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ5w16Ee-7yKeMrU9-1g" name="maqmaquinadet" type="COMPLEX" multiple="true">
+            <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ6A16Ee-7yKeMrU9-1g" name="bscore_nombre"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ6Q16Ee-7yKeMrU9-1g" name="bscproy_nombre"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ6g16Ee-7yKeMrU9-1g" name="bscsuc_nombre"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ6w16Ee-7yKeMrU9-1g" name="maq_nombre"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ7A16Ee-7yKeMrU9-1g" name="maqd_cd_k"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ7Q16Ee-7yKeMrU9-1g" name="maqd_parametro"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ7g16Ee-7yKeMrU9-1g" name="maqd_valor"/>
+          </inputs>
+          <inputs xmi:type="process:ContractInput" xmi:id="_PhzJ7w16Ee-7yKeMrU9-1g" name="maq_desch"/>
+        </inputs>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw8A16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.bscore_nombre != null" errorMessage="bscore_nombre is mandatory for MaqMaquinaenc" name="mandatory_nuevamaquinaInput_bscore_nombre">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw8Q16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.bscproy_nombre != null" errorMessage="bscproy_nombre is mandatory for MaqMaquinaenc" name="mandatory_nuevamaquinaInput_bscproy_nombre">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw8g16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.bscsuc_nombre != null" errorMessage="bscsuc_nombre is mandatory for MaqMaquinaenc" name="mandatory_nuevamaquinaInput_bscsuc_nombre">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw8w16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maqtpo_nombre != null" errorMessage="maqtpo_nombre is mandatory for MaqMaquinaenc" name="mandatory_nuevamaquinaInput_maqtpo_nombre">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw9A16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maq_deslg != null" errorMessage="maq_deslg is mandatory for MaqMaquinaenc" name="mandatory_nuevamaquinaInput_maq_deslg">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw9Q16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maq_nombre != null" errorMessage="maq_nombre is mandatory for MaqMaquinaenc" name="mandatory_nuevamaquinaInput_maq_nombre">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw9g16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maqmaquinadet?.bscore_nombre.flatten().every{it!=null}" errorMessage="bscore_nombre is mandatory for MaqMaquinadet" name="mandatory_nuevamaquinaInput_maqmaquinadet_bscore_nombre">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw9w16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maqmaquinadet?.bscproy_nombre.flatten().every{it!=null}" errorMessage="bscproy_nombre is mandatory for MaqMaquinadet" name="mandatory_nuevamaquinaInput_maqmaquinadet_bscproy_nombre">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw-A16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maqmaquinadet?.bscsuc_nombre.flatten().every{it!=null}" errorMessage="bscsuc_nombre is mandatory for MaqMaquinadet" name="mandatory_nuevamaquinaInput_maqmaquinadet_bscsuc_nombre">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw-Q16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maqmaquinadet?.maq_nombre.flatten().every{it!=null}" errorMessage="maq_nombre is mandatory for MaqMaquinadet" name="mandatory_nuevamaquinaInput_maqmaquinadet_maq_nombre">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw-g16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maqmaquinadet?.maqd_cd_k.flatten().every{it!=null}" errorMessage="maqd_cd_k is mandatory for MaqMaquinadet" name="mandatory_nuevamaquinaInput_maqmaquinadet_maqd_cd_k">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw-w16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maqmaquinadet?.maqd_parametro.flatten().every{it!=null}" errorMessage="maqd_parametro is mandatory for MaqMaquinadet" name="mandatory_nuevamaquinaInput_maqmaquinadet_maqd_parametro">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw_A16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maqmaquinadet?.maqd_valor.flatten().every{it!=null}" errorMessage="maqd_valor is mandatory for MaqMaquinadet" name="mandatory_nuevamaquinaInput_maqmaquinadet_maqd_valor">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Phzw_Q16Ee-7yKeMrU9-1g" expression="nuevamaquinaInput?.maq_desch != null" errorMessage="maq_desch is mandatory for MaqMaquinaenc" name="mandatory_nuevamaquinaInput_maq_desch">
+          <inputNames>nuevamaquinaInput</inputNames>
+        </constraints>
+      </contract>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_MawaLA1yEe-7yKeMrU9-1g">
+        <name xmi:type="expression:Expression" xmi:id="_MawaLQ1yEe-7yKeMrU9-1g" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_MawaLg1yEe-7yKeMrU9-1g" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_MawaLw1yEe-7yKeMrU9-1g">
+        <name xmi:type="expression:Expression" xmi:id="_MawaMA1yEe-7yKeMrU9-1g" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_MawaMQ1yEe-7yKeMrU9-1g" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_MawaMg1yEe-7yKeMrU9-1g">
+        <name xmi:type="expression:Expression" xmi:id="_MawaMw1yEe-7yKeMrU9-1g" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_MawaNA1yEe-7yKeMrU9-1g" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_MawaNQ1yEe-7yKeMrU9-1g">
+        <name xmi:type="expression:Expression" xmi:id="_MawaNg1yEe-7yKeMrU9-1g" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_MawaNw1yEe-7yKeMrU9-1g" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_MawaOA1yEe-7yKeMrU9-1g">
+        <name xmi:type="expression:Expression" xmi:id="_MawaOQ1yEe-7yKeMrU9-1g" content="" returnTypeFixed="true"/>
+        <value xmi:type="expression:Expression" xmi:id="_MawaOg1yEe-7yKeMrU9-1g" content="" returnTypeFixed="true"/>
+      </searchIndexes>
+    </elements>
+    <datatypes xmi:type="process:BooleanType" xmi:id="_MawaOw1yEe-7yKeMrU9-1g" name="Boolean"/>
+    <datatypes xmi:type="process:DateType" xmi:id="_MawaPA1yEe-7yKeMrU9-1g" name="Date"/>
+    <datatypes xmi:type="process:IntegerType" xmi:id="_MawaPQ1yEe-7yKeMrU9-1g" name="Integer"/>
+    <datatypes xmi:type="process:LongType" xmi:id="_MawaPg1yEe-7yKeMrU9-1g" name="Long"/>
+    <datatypes xmi:type="process:DoubleType" xmi:id="_MawaPw1yEe-7yKeMrU9-1g" name="Double"/>
+    <datatypes xmi:type="process:StringType" xmi:id="_MawaQA1yEe-7yKeMrU9-1g" name="Text"/>
+    <datatypes xmi:type="process:JavaType" xmi:id="_MawaQQ1yEe-7yKeMrU9-1g" name="Java_object"/>
+    <datatypes xmi:type="process:XMLType" xmi:id="_MawaQg1yEe-7yKeMrU9-1g" name="XML"/>
+    <datatypes xmi:type="process:BusinessObjectType" xmi:id="_MawaQw1yEe-7yKeMrU9-1g" name="Business_Object"/>
+  </process:MainProcess>
+  <notation:Diagram xmi:id="_MawaRA1yEe-7yKeMrU9-1g" type="Process" element="_MavzAA1yEe-7yKeMrU9-1g" name="MiDiagrama" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_MawaRQ1yEe-7yKeMrU9-1g" type="2007" element="_MawaEA1yEe-7yKeMrU9-1g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_MawaRg1yEe-7yKeMrU9-1g" type="5008"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_MawaRw1yEe-7yKeMrU9-1g" type="7001">
+        <children xmi:type="notation:Node" xmi:id="_MawaSA1yEe-7yKeMrU9-1g" type="3007" element="_MawaEQ1yEe-7yKeMrU9-1g">
+          <children xmi:type="notation:DecorationNode" xmi:id="_MawaSQ1yEe-7yKeMrU9-1g" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_MawaSg1yEe-7yKeMrU9-1g" type="7002">
+            <children xmi:type="notation:Shape" xmi:id="_MawaTg1yEe-7yKeMrU9-1g" type="3002" element="_MawaEg1yEe-7yKeMrU9-1g" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_MawaTw1yEe-7yKeMrU9-1g" type="5024">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_MawaUA1yEe-7yKeMrU9-1g" y="5"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MawaUQ1yEe-7yKeMrU9-1g" x="60" y="68"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_IKJm4A16Ee-7yKeMrU9-1g" type="3003" element="_IKHKoA16Ee-7yKeMrU9-1g" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_IKJm4g16Ee-7yKeMrU9-1g" type="5025">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_IKJm4w16Ee-7yKeMrU9-1g" y="5"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IKJm4Q16Ee-7yKeMrU9-1g" x="336" y="72"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_IgHP0Q16Ee-7yKeMrU9-1g" type="3027" element="_IgGowA16Ee-7yKeMrU9-1g" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_IgHP0w16Ee-7yKeMrU9-1g" type="5017"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IgHP0g16Ee-7yKeMrU9-1g" x="160" y="60" width="100" height="50"/>
+            </children>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_MawaUg1yEe-7yKeMrU9-1g"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_MawaUw1yEe-7yKeMrU9-1g" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_MawaVA1yEe-7yKeMrU9-1g"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_MawaVQ1yEe-7yKeMrU9-1g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MawaVg1yEe-7yKeMrU9-1g"/>
+        </children>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_MawaVw1yEe-7yKeMrU9-1g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_MawaWA1yEe-7yKeMrU9-1g" fontName="Segoe UI"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_MawaWQ1yEe-7yKeMrU9-1g"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_MawaWg1yEe-7yKeMrU9-1g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MawaWw1yEe-7yKeMrU9-1g" width="1320" height="250"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_MawaXA1yEe-7yKeMrU9-1g"/>
+    <edges xmi:type="notation:Connector" xmi:id="_MawaXQ1yEe-7yKeMrU9-1g" type="4001" element="_MawaJw1yEe-7yKeMrU9-1g" source="_MawaTg1yEe-7yKeMrU9-1g" target="_IgHP0Q16Ee-7yKeMrU9-1g" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_MawaXg1yEe-7yKeMrU9-1g" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_MawaXw1yEe-7yKeMrU9-1g" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_MawaYA1yEe-7yKeMrU9-1g" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MawaYQ1yEe-7yKeMrU9-1g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_IKPGcA16Ee-7yKeMrU9-1g" type="4001" element="_IKMDIA16Ee-7yKeMrU9-1g" source="_IgHP0Q16Ee-7yKeMrU9-1g" target="_IKJm4A16Ee-7yKeMrU9-1g" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_IKPtgA16Ee-7yKeMrU9-1g" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IKPtgQ16Ee-7yKeMrU9-1g" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_IKPGcQ16Ee-7yKeMrU9-1g" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IKPGcg16Ee-7yKeMrU9-1g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
