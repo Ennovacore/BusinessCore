@@ -4,7 +4,7 @@
   "type" : "widget",
   "custom" : true,
   "modelVersion" : "2.6",
-  "lastUpdate" : 1714494241133,
+  "lastUpdate" : 1715274616725,
   "description" : "Table with pagination and filtering capabilities",
   "template" : "@customDatatableModal.tpl.html",
   "controller" : "@customDatatableModal.ctrl.js",

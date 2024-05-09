@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "d58915af-7aa0-4918-a5ad-04c42f17478f",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1715109027410,
+  "lastUpdate" : 1715275499872,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -36,6 +36,81 @@
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Lista"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "process"
+                  },
+                  "targetUrl" : {
+                    "type" : "constant",
+                    "value" : "http://"
+                  },
+                  "pageToken" : {
+                    "type" : "constant"
+                  },
+                  "processName" : {
+                    "type" : "constant",
+                    "value" : "MasterTipoMaquina"
+                  },
+                  "processVersion" : {
+                    "type" : "constant",
+                    "value" : "1.0"
+                  },
+                  "taskId" : {
+                    "type" : "constant"
+                  },
+                  "caseId" : {
+                    "type" : "constant"
+                  },
+                  "target" : {
+                    "type" : "constant",
+                    "value" : "_self"
+                  },
+                  "appToken" : {
+                    "type" : "constant"
+                  },
+                  "urlParams" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "right"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  }
+                },
+                "reference" : "65ba6ac1-4498-40a0-a242-8a4bb272594a",
+                "hasValidationError" : false,
+                "id" : "pbLink"
+              }
+            ],
             [
               {
                 "type" : "component",
@@ -147,7 +222,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Bscore_nombre"
+                          "value" : "Business Core"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -218,7 +293,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Bscproy_nombre"
+                          "value" : "Proyecto"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -289,7 +364,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Bscsuc_nombre"
+                          "value" : "Sucursal"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -360,7 +435,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Maqtpo_nombre"
+                          "value" : "Tipo Maquina"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -450,7 +525,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Maqtpo_desc_larga"
+                          "value" : "Descripción"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -530,11 +605,11 @@
                   },
                   "buttonStyle" : {
                     "type" : "constant",
-                    "value" : "primary"
+                    "value" : "success"
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Registrar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -575,7 +650,7 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "center"
+                    "value" : "right"
                   },
                   "dimension" : {
                     "type" : "constant",
