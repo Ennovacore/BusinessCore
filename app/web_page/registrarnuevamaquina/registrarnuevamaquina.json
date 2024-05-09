@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "80d140a1-57d3-4f4c-97f5-7f47c13d298d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1715207627277,
+  "lastUpdate" : 1715209462751,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -1119,7 +1119,7 @@
                               },
                               "cssClasses" : {
                                 "type" : "constant",
-                                "value" : ""
+                                "value" : "Maqd_cd_k"
                               },
                               "labelWidth" : {
                                 "type" : "constant",
@@ -1434,7 +1434,7 @@
                           "value" : false
                         },
                         "cssClasses" : {
-                          "type" : "constant",
+                          "type" : "expression",
                           "value" : "agregarItem"
                         },
                         "buttonStyle" : {
@@ -1761,20 +1761,18 @@
     "autoincrementable" : {
       "type" : "expression",
       "value" : [
-        "// Suponiendo que tienes un botón con el ID \"agregarItem\"\r",
         "document.getElementById(\"agregarItem\").addEventListener(\"click\", function() {\r",
-        "    // Obtener el campo de entrada por su ID\r",
-        "    var itemInput = document.getElementById(\"itemInput\");\r",
+        "    var contador = 1; // Inicializamos el contador\r",
+        "    // Obtener el campo de numeración por su ID\r",
+        "    var numeracionItem = document.getElementById(\"Maqd_cd_k\");\r",
         "    \r",
-        "    // Obtener el valor actual del campo de entrada y convertirlo a un número entero\r",
-        "    var currentValue = parseInt(itemInput.value);\r",
+        "    // Asignar el valor del contador al campo de numeración\r",
+        "    numeracionItem.value = contador;\r",
         "    \r",
-        "    // Incrementar el valor en 1\r",
-        "    var newValue = currentValue + 1;\r",
+        "    console.log(contador);\r",
         "    \r",
-        "    // Actualizar el valor del campo de entrada con el nuevo valor\r",
-        "    itemInput.value = newValue;\r",
-        "    console.log(newValue);\r",
+        "    // Incrementar el contador para el próximo item\r",
+        "    contador++;\r",
         "});"
       ],
       "exposed" : false
